@@ -16,7 +16,7 @@ git init
 git add .
 git commit -m "Add privacy policy"
 git branch -M main
-git remote add origin https://github.com/KULLANICIADI/privacy-policy.git
+git remote add origin https://github.com/demrdev/privacy-policy.git
 git push -u origin main
 ```
 
@@ -38,7 +38,7 @@ git push -u origin main
 ## 4. URL'nizi Kontrol Etme
 Birkaç dakika sonra gizlilik politikanız şu adreste yayınlanacak:
 ```
-https://KULLANICIADI.github.io/privacy-policy/
+https://demrdev.github.io/privacy-policy/
 ```
 
 ## 5. Google Play Store'a Ekleme
