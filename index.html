@@ -3,372 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Privacy Policy - Geometry Calculator</title>
+    <title>Privacy Policies - Math Apps</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * {margin: 0; padding: 0; box-sizing: border-box;}
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
         h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-            font-size: 2em;
+            color: #667eea;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
         }
-        
-        h2 {
-            color: #34495e;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 1.5em;
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 5px;
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
         }
-        
-        h3 {
-            color: #34495e;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 1.2em;
-        }
-        
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        
-        ul {
-            margin-left: 25px;
-            margin-bottom: 15px;
-        }
-        
-        li {
-            margin-bottom: 5px;
-        }
-        
-        strong {
-            color: #2c3e50;
-        }
-        
-        a {
-            color: #3498db;
+        .app-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 30px;
             text-decoration: none;
+            color: #333;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        
-        a:hover {
-            text-decoration: underline;
+        .app-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
         }
-        
-        .last-updated {
-            color: #7f8c8d;
-            font-style: italic;
+        .app-icon {
+            font-size: 60px;
+            text-align: center;
             margin-bottom: 20px;
         }
-        
-        .language-selector {
+        .app-name {
+            font-size: 24px;
+            font-weight: 600;
+            color: #667eea;
             text-align: center;
-            margin-bottom: 30px;
-            padding: 20px;
-            background-color: #ecf0f1;
-            border-radius: 5px;
+            margin-bottom: 10px;
         }
-        
-        .language-selector button {
-            padding: 10px 20px;
-            margin: 0 10px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s;
+        .app-description {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
         }
-        
-        .language-selector button:hover {
-            background-color: #2980b9;
-        }
-        
-        .language-selector button.active {
-            background-color: #2c3e50;
-        }
-        
-        .content {
-            display: none;
-        }
-        
-        .content.active {
-            display: block;
-        }
-        
-        hr {
-            border: none;
-            border-top: 3px solid #ecf0f1;
-            margin: 40px 0;
-        }
-        
         @media (max-width: 600px) {
-            .container {
-                padding: 15px;
-            }
-            
-            h1 {
-                font-size: 1.5em;
-            }
-            
-            h2 {
-                font-size: 1.2em;
-            }
-            
-            .language-selector button {
-                display: block;
-                width: 100%;
-                margin: 5px 0;
-            }
+            .container {padding: 30px 20px;}
+            h1 {font-size: 1.8em;}
+            .apps-grid {grid-template-columns: 1fr;}
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="language-selector">
-            <button onclick="showLanguage('en')" id="en-btn" class="active">English</button>
-            <button onclick="showLanguage('tr')" id="tr-btn">Türkçe</button>
+        <h1>Privacy Policies</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 20px;">Select an app to view its privacy policy</p>
+
+        <div class="apps-grid">
+            <a href="circle_calculator/" class="app-card">
+                <div class="app-icon">○</div>
+                <div class="app-name">Circle Calculator</div>
+                <div class="app-description">Calculate radius, diameter, circumference, and area</div>
+            </a>
+
+            <a href="geometry_calculator.html" class="app-card">
+                <div class="app-icon">📐</div>
+                <div class="app-name">Geometry Calculator</div>
+                <div class="app-description">Comprehensive geometry calculations</div>
+            </a>
         </div>
-        
-        <!-- English Content -->
-        <div id="en-content" class="content active">
-            <h1>Privacy Policy - Geometry Calculator</h1>
-            <p class="last-updated"><strong>Last Updated: June 3, 2025</strong></p>
-            
-            <h2>Introduction</h2>
-            <p>This Privacy Policy explains how Geometry Calculator ("the App", "we", "our") handles user information. We are committed to protecting the privacy of all users, including children under 13 years of age.</p>
-            
-            <h2>Data Collection</h2>
-            <p><strong>Geometry Calculator does not collect, store, or transmit any personal data.</strong> The application operates entirely offline on your device and does not require an internet connection to function.</p>
-            
-            <h3>Information We Do NOT Collect:</h3>
-            <ul>
-                <li>Personal identification information (names, email addresses, phone numbers)</li>
-                <li>Device identifiers or unique IDs</li>
-                <li>Location data</li>
-                <li>Photos, videos, or audio recordings</li>
-                <li>Contact lists or calendar data</li>
-                <li>Browsing history or search queries</li>
-                <li>Any form of user-generated content</li>
-            </ul>
-            
-            <h2>How the App Works</h2>
-            <p>Geometry Calculator is a standalone educational tool that:</p>
-            <ul>
-                <li>Performs all calculations locally on your device</li>
-                <li>Does not require user registration or login</li>
-                <li>Does not store calculation history beyond the current session</li>
-                <li>Does not sync data across devices</li>
-                <li>Does not contain any social features or user interaction</li>
-            </ul>
-            
-            <h2>Permissions</h2>
-            <p>Our application requests only the minimal permissions required for basic functionality:</p>
-            <ul>
-                <li><strong>Storage</strong> (if applicable): Only to save calculation results locally on your device</li>
-                <li>No network permissions are requested or used</li>
-            </ul>
-            
-            <h2>Third-Party Services</h2>
-            
-            <h3>Google Play Services</h3>
-            <p>While Geometry Calculator itself does not collect any data, it is distributed through Google Play Store, which may collect:</p>
-            <ul>
-                <li>Basic app usage statistics (installation, updates, crashes)</li>
-                <li>Device information for compatibility purposes</li>
-            </ul>
-            <p>For information about Google Play's data practices, please see <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
-            
-            <h3>Advertising</h3>
-            <p>This application does not contain any advertisements or marketing content.</p>
-            
-            <h3>Analytics</h3>
-            <p>We do not use any analytics services or tracking tools.</p>
-            
-            <h2>Children's Privacy</h2>
-            <p>Geometry Calculator is designed to be safe for users of all ages, including children under 13:</p>
-            <ul>
-                <li>The app does not collect any personal information from any user</li>
-                <li>No account creation or sign-in is required</li>
-                <li>There are no social features or communication capabilities</li>
-                <li>Content is educational and appropriate for all ages</li>
-                <li>We comply with the Children's Online Privacy Protection Act (COPPA)</li>
-            </ul>
-            
-            <h3>For Parents</h3>
-            <p>Parents can feel confident that:</p>
-            <ul>
-                <li>Your child's privacy is fully protected</li>
-                <li>No information about your child is collected or shared</li>
-                <li>The app can be used without parental supervision regarding data privacy</li>
-                <li>There are no in-app purchases or external links</li>
-            </ul>
-            
-            <h2>Data Security</h2>
-            <p>Since we do not collect any data, there is no risk of data breaches or unauthorized access to personal information through our app.</p>
-            
-            <h2>Your Rights</h2>
-            <p>As we do not collect any personal data, there is no user data to access, modify, or delete. You can uninstall the app at any time to remove it completely from your device.</p>
-            
-            <h2>Changes to This Policy</h2>
-            <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date. We encourage you to review this policy periodically.</p>
-            
-            <h2>Compliance</h2>
-            <p>This privacy policy complies with:</p>
-            <ul>
-                <li>Google Play Developer Program Policies</li>
-                <li>Children's Online Privacy Protection Act (COPPA)</li>
-                <li>General Data Protection Regulation (GDPR)</li>
-                <li>California Consumer Privacy Act (CCPA)</li>
-            </ul>
-            
-            <h2>Contact Information</h2>
-            <p>If you have any questions or concerns about this privacy policy or our practices, please contact us:</p>
-            <p><strong>Email:</strong> <a href="mailto:dmr.translate@gmail.com">dmr.translate@gmail.com</a></p>
-            <p>We aim to respond to all privacy-related inquiries within 48 hours.</p>
-        </div>
-        
-        <hr>
-        
-        <!-- Turkish Content -->
-        <div id="tr-content" class="content">
-            <h1>Gizlilik Politikası - Geometry Calculator</h1>
-            <p class="last-updated"><strong>Son Güncelleme: 3 Haziran 2025</strong></p>
-            
-            <h2>Giriş</h2>
-            <p>Bu Gizlilik Politikası, Geometry Calculator ("Uygulama", "biz", "bizim") uygulamasının kullanıcı bilgilerini nasıl ele aldığını açıklamaktadır. 13 yaş altındaki çocuklar dahil tüm kullanıcıların gizliliğini korumaya kararlıyız.</p>
-            
-            <h2>Veri Toplama</h2>
-            <p><strong>Geometry Calculator hiçbir kişisel veri toplamaz, saklamaz veya iletmez.</strong> Uygulama tamamen çevrimdışı olarak cihazınızda çalışır ve çalışması için internet bağlantısı gerektirmez.</p>
-            
-            <h3>Toplamadığımız Bilgiler:</h3>
-            <ul>
-                <li>Kişisel kimlik bilgileri (isimler, e-posta adresleri, telefon numaraları)</li>
-                <li>Cihaz tanımlayıcıları veya benzersiz kimlikler</li>
-                <li>Konum verileri</li>
-                <li>Fotoğraflar, videolar veya ses kayıtları</li>
-                <li>Kişi listeleri veya takvim verileri</li>
-                <li>Tarama geçmişi veya arama sorguları</li>
-                <li>Kullanıcı tarafından oluşturulan herhangi bir içerik</li>
-            </ul>
-            
-            <h2>Uygulama Nasıl Çalışır</h2>
-            <p>Geometry Calculator bağımsız bir eğitim aracıdır ve:</p>
-            <ul>
-                <li>Tüm hesaplamaları cihazınızda yerel olarak yapar</li>
-                <li>Kullanıcı kaydı veya giriş gerektirmez</li>
-                <li>Mevcut oturum dışında hesaplama geçmişi saklamaz</li>
-                <li>Cihazlar arasında veri senkronizasyonu yapmaz</li>
-                <li>Sosyal özellikler veya kullanıcı etkileşimi içermez</li>
-            </ul>
-            
-            <h2>İzinler</h2>
-            <p>Uygulamamız yalnızca temel işlevsellik için gereken minimum izinleri ister:</p>
-            <ul>
-                <li><strong>Depolama</strong> (varsa): Yalnızca hesaplama sonuçlarını cihazınıza yerel olarak kaydetmek için</li>
-                <li>Ağ izinleri istenmez veya kullanılmaz</li>
-            </ul>
-            
-            <h2>Üçüncü Taraf Hizmetler</h2>
-            
-            <h3>Google Play Hizmetleri</h3>
-            <p>Geometry Calculator'ın kendisi hiçbir veri toplamamakla birlikte, Google Play Store üzerinden dağıtıldığı için Google Play şunları toplayabilir:</p>
-            <ul>
-                <li>Temel uygulama kullanım istatistikleri (kurulum, güncellemeler, çökmeler)</li>
-                <li>Uyumluluk amaçlı cihaz bilgileri</li>
-            </ul>
-            <p>Google Play'in veri uygulamaları hakkında bilgi için lütfen <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikası</a>'na bakın.</p>
-            
-            <h3>Reklamlar</h3>
-            <p>Bu uygulama hiçbir reklam veya pazarlama içeriği içermez.</p>
-            
-            <h3>Analitik</h3>
-            <p>Herhangi bir analitik hizmeti veya izleme aracı kullanmıyoruz.</p>
-            
-            <h2>Çocukların Gizliliği</h2>
-            <p>Geometry Calculator, 13 yaş altındaki çocuklar dahil her yaştan kullanıcı için güvenli olacak şekilde tasarlanmıştır:</p>
-            <ul>
-                <li>Uygulama hiçbir kullanıcıdan kişisel bilgi toplamaz</li>
-                <li>Hesap oluşturma veya giriş yapma gerekmez</li>
-                <li>Sosyal özellikler veya iletişim yetenekleri yoktur</li>
-                <li>İçerik eğiticidir ve her yaş için uygundur</li>
-                <li>Çocukların Çevrimiçi Gizlilik Koruma Yasası'na (COPPA) uyarız</li>
-            </ul>
-            
-            <h3>Ebeveynler İçin</h3>
-            <p>Ebeveynler şunlardan emin olabilir:</p>
-            <ul>
-                <li>Çocuğunuzun gizliliği tamamen korunmaktadır</li>
-                <li>Çocuğunuz hakkında hiçbir bilgi toplanmaz veya paylaşılmaz</li>
-                <li>Uygulama, veri gizliliği konusunda ebeveyn gözetimi olmadan kullanılabilir</li>
-                <li>Uygulama içi satın alma veya harici bağlantı yoktur</li>
-            </ul>
-            
-            <h2>Veri Güvenliği</h2>
-            <p>Herhangi bir veri toplamadığımız için, uygulamamız aracılığıyla veri ihlali veya kişisel bilgilere yetkisiz erişim riski bulunmamaktadır.</p>
-            
-            <h2>Haklarınız</h2>
-            <p>Herhangi bir kişisel veri toplamadığımız için erişilecek, değiştirilecek veya silinecek kullanıcı verisi yoktur. Uygulamayı cihazınızdan tamamen kaldırmak için istediğiniz zaman kaldırabilirsiniz.</p>
-            
-            <h2>Bu Politikadaki Değişiklikler</h2>
-            <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Değişiklikler, güncellenmiş revizyon tarihi ile bu sayfada yayınlanacaktır. Bu politikayı periyodik olarak gözden geçirmenizi öneririz.</p>
-            
-            <h2>Uyumluluk</h2>
-            <p>Bu gizlilik politikası şunlara uygundur:</p>
-            <ul>
-                <li>Google Play Geliştirici Program Politikaları</li>
-                <li>Çocukların Çevrimiçi Gizlilik Koruma Yasası (COPPA)</li>
-                <li>Genel Veri Koruma Yönetmeliği (GDPR)</li>
-                <li>Kişisel Verilerin Korunması Kanunu (KVKK)</li>
-            </ul>
-            
-            <h2>İletişim Bilgileri</h2>
-            <p>Bu gizlilik politikası veya uygulamalarımız hakkında sorularınız veya endişeleriniz varsa, lütfen bizimle iletişime geçin:</p>
-            <p><strong>E-posta:</strong> <a href="mailto:dmr.translate@gmail.com">dmr.translate@gmail.com</a></p>
-            <p>Gizlilikle ilgili tüm sorulara 48 saat içinde yanıt vermeyi hedefliyoruz.</p>
-        </div>
+
+        <p style="text-align: center; color: #999; margin-top: 50px; font-size: 14px;">
+            © 2025 Math Apps. All rights reserved.
+        </p>
     </div>
-    
-    <script>
-        function showLanguage(lang) {
-            // Hide all content
-            document.querySelectorAll('.content').forEach(content => {
-                content.classList.remove('active');
-            });
-            
-            // Remove active class from all buttons
-            document.querySelectorAll('.language-selector button').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
-            // Show selected content
-            document.getElementById(lang + '-content').classList.add('active');
-            
-            // Add active class to selected button
-            document.getElementById(lang + '-btn').classList.add('active');
-        }
-    </script>
 </body>
 </html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Circle Calculator</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {color: #667eea; margin-bottom: 10px; font-size: 2em;}
+        h2 {color: #34495e; margin-top: 30px; margin-bottom: 15px; font-size: 1.5em; border-bottom: 2px solid #ecf0f1; padding-bottom: 5px;}
+        p {margin-bottom: 15px;}
+        ul {margin-left: 25px; margin-bottom: 15px;}
+        strong {color: #667eea;}
+        a {color: #667eea; text-decoration: none;}
+        a:hover {text-decoration: underline;}
+        .language-selector {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+        }
+        .language-selector button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: white;
+            color: #667eea;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .language-selector button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .language-selector button.active {
+            background-color: #2c3e50;
+            color: white;
+        }
+        .content {display: none;}
+        .content.active {display: block;}
+        .highlight {
+            background: #f0f4ff;
+            padding: 15px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        @media (max-width: 600px) {
+            .container {padding: 15px;}
+            h1 {font-size: 1.5em;}
+            .language-selector button {display: block; width: 100%; margin: 5px 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-selector">
+            <button onclick="showLanguage('en')" id="en-btn" class="active">🇬🇧 English</button>
+            <button onclick="showLanguage('tr')" id="tr-btn">🇹🇷 Türkçe</button>
+        </div>
+
+        <!-- English Content -->
+        <div id="en-content" class="content active">
+            <h1>Privacy Policy - Circle Calculator</h1>
+            <p style="color: #7f8c8d; font-style: italic;"><strong>Last Updated: October 10, 2025</strong></p>
+
+            <div class="highlight">
+                <strong>Quick Summary:</strong> Circle Calculator <strong>does not collect, store, or process any personal data</strong>. Your privacy is completely protected.
+            </div>
+
+            <h2>1. Introduction</h2>
+            <p>Circle Calculator is a completely offline mathematical calculation tool and does not collect any personal information.</p>
+
+            <h2>2. Information We Collect</h2>
+            <p><strong>We do NOT collect any personal information.</strong> The application:</p>
+            <ul>
+                <li>Does not require user registration</li>
+                <li>Does not collect names, email addresses, or contact information</li>
+                <li>Does not access your contacts, location, or photos</li>
+                <li>Does not track which calculations you perform</li>
+                <li>Does not use analytics services</li>
+            </ul>
+
+            <h2>3. Data Storage</h2>
+            <p>The only data stored are your app preferences, saved locally on your device:</p>
+            <ul>
+                <li>Theme preference (Dark/Light mode)</li>
+                <li>Decimal places setting (1-5 digits)</li>
+                <li>Language preference (English/Turkish)</li>
+                <li>Angle unit setting (Degrees/Radians)</li>
+            </ul>
+            <p><strong>No data is synced to cloud services</strong> or external servers.</p>
+
+            <h2>4. Data Sharing</h2>
+            <p><strong>We do NOT share any data</strong> with third parties.</p>
+            <ul>
+                <li>No advertising networks</li>
+                <li>No analytics providers</li>
+                <li>No third-party services</li>
+            </ul>
+
+            <h2>5. Internet Connection</h2>
+            <p><strong>Circle Calculator works completely offline</strong> and does not require an internet connection.</p>
+
+            <h2>6. Children's Privacy</h2>
+            <p>Circle Calculator is safe for users of all ages, including children under 13. We comply with COPPA and GDPR-K regulations.</p>
+
+            <h2>7. Security</h2>
+            <p>Local data is stored securely using platform-standard encryption on your device.</p>
+
+            <h2>8. Contact</h2>
+            <p><strong>Developer:</strong> Arif Edemir</p>
+            <p><strong>Email:</strong> <a href="mailto:demirahmet2017@gmail.com">demirahmet2017@gmail.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/demrdev/circulcalculator.legacy">github.com/demrdev/circulcalculator.legacy</a></p>
+        </div>
+
+        <!-- Turkish Content -->
+        <div id="tr-content" class="content">
+            <h1>Gizlilik Politikası - Circle Calculator</h1>
+            <p style="color: #7f8c8d; font-style: italic;"><strong>Son Güncelleme: 10 Ekim 2025</strong></p>
+
+            <div class="highlight">
+                <strong>Kısa Özet:</strong> Circle Calculator <strong>hiçbir kişisel veri toplamıyor, saklamıyor veya işlemiyor</strong>. Gizliliğiniz tamamen korunmaktadır.
+            </div>
+
+            <h2>1. Giriş</h2>
+            <p>Circle Calculator, tamamen çevrimdışı çalışan bir matematik hesaplama aracıdır ve herhangi bir kişisel bilgi toplamaz.</p>
+
+            <h2>2. Topladığımız Bilgiler</h2>
+            <p><strong>HİÇBİR kişisel bilgi toplamıyoruz.</strong> Uygulama:</p>
+            <ul>
+                <li>Kullanıcı kaydı gerektirmez</li>
+                <li>İsim, e-posta veya iletişim bilgisi toplamaz</li>
+                <li>Rehber, konum veya fotoğraflara erişmez</li>
+                <li>Hangi hesaplamaları yaptığınızı takip etmez</li>
+                <li>Analitik servisleri kullanmaz</li>
+            </ul>
+
+            <h2>3. Veri Depolama</h2>
+            <p>Saklanan tek veri, cihazınızda yerel olarak kaydedilen uygulama tercihlerinizdir:</p>
+            <ul>
+                <li>Tema tercihi (Karanlık/Aydınlık mod)</li>
+                <li>Ondalık basamak ayarı (1-5 hane)</li>
+                <li>Dil tercihi (İngilizce/Türkçe)</li>
+                <li>Açı birimi ayarı (Derece/Radyan)</li>
+            </ul>
+            <p><strong>Hiçbir veri bulut servislerine</strong> senkronize edilmez.</p>
+
+            <h2>4. Veri Paylaşımı</h2>
+            <p><strong>Üçüncü taraflarla HİÇBİR veri paylaşmıyoruz.</strong></p>
+            <ul>
+                <li>Reklam ağları yok</li>
+                <li>Analitik sağlayıcıları yok</li>
+                <li>Üçüncü taraf servisler yok</li>
+            </ul>
+
+            <h2>5. İnternet Bağlantısı</h2>
+            <p><strong>Circle Calculator tamamen çevrimdışı çalışır</strong> ve internet bağlantısı gerektirmez.</p>
+
+            <h2>6. Çocukların Gizliliği</h2>
+            <p>Circle Calculator, 13 yaş altı çocuklar dahil her yaştan kullanıcı için güvenlidir. COPPA ve GDPR-K düzenlemelerine uyarız.</p>
+
+            <h2>7. Güvenlik</h2>
+            <p>Yerel veriler cihazınızda platform standart şifreleme kullanılarak güvenli şekilde saklanır.</p>
+
+            <h2>8. İletişim</h2>
+            <p><strong>Geliştirici:</strong> Arif Edemir</p>
+            <p><strong>E-posta:</strong> <a href="mailto:demirahmet2017@gmail.com">demirahmet2017@gmail.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/demrdev/circulcalculator.legacy">github.com/demrdev/circulcalculator.legacy</a></p>
+        </div>
+    </div>
+
+    <script>
+        function showLanguage(lang) {
+            document.querySelectorAll('.content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.querySelectorAll('.language-selector button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(lang + '-content').classList.add('active');
+            document.getElementById(lang + '-btn').classList.add('active');
+        }
+    </script>
+</body>
+</html>
