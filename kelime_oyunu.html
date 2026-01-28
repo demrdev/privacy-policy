@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Kelime Oyunu</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {color: #43A047; margin-bottom: 10px; font-size: 2em;}
+        h2 {color: #34495e; margin-top: 30px; margin-bottom: 15px; font-size: 1.5em; border-bottom: 2px solid #ecf0f1; padding-bottom: 5px;}
+        p {margin-bottom: 15px;}
+        ul {margin-left: 25px; margin-bottom: 15px;}
+        strong {color: #43A047;}
+        a {color: #43A047; text-decoration: none;}
+        a:hover {text-decoration: underline;}
+        .language-selector {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, #43A047 0%, #2E7D32 100%);
+            border-radius: 10px;
+        }
+        .language-selector button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: white;
+            color: #43A047;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .language-selector button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .language-selector button.active {
+            background-color: #2c3e50;
+            color: white;
+        }
+        .content {display: none;}
+        .content.active {display: block;}
+        .highlight {
+            background: #f1f8e9;
+            padding: 15px;
+            border-left: 4px solid #43A047;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        @media (max-width: 600px) {
+            .container {padding: 15px;}
+            h1 {font-size: 1.5em;}
+            .language-selector button {display: block; width: 100%; margin: 5px 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-selector">
+            <button onclick="showLanguage('en')" id="en-btn" class="active">English</button>
+            <button onclick="showLanguage('tr')" id="tr-btn">Turkce</button>
+        </div>
+
+        <!-- English Content -->
+        <div id="en-content" class="content active">
+            <h1>Privacy Policy - Kelime Oyunu (Word Game)</h1>
+            <p style="color: #7f8c8d; font-style: italic;"><strong>Last Updated: January 28, 2026</strong></p>
+
+            <div class="highlight">
+                <strong>Quick Summary:</strong> Kelime Oyunu <strong>does not collect any personal data</strong>. The app uses Google AdMob for advertisements and connects to online dictionaries for word validation. All game progress and statistics are stored locally on your device.
+            </div>
+
+            <h2>1. Introduction</h2>
+            <p>This Privacy Policy explains how Kelime Oyunu ("the App", "we", "our") handles user information. Kelime Oyunu is a multilingual word guessing game inspired by Wordle, supporting Turkish and English languages. We are committed to protecting the privacy of all users.</p>
+
+            <h2>2. Information We Collect</h2>
+            <p><strong>We do NOT collect any personal information.</strong> The application:</p>
+            <ul>
+                <li>Does not require user registration or login</li>
+                <li>Does not collect names, email addresses, or contact information</li>
+                <li>Does not access your contacts, location, camera, or photos</li>
+                <li>Does not collect device identifiers or unique IDs</li>
+                <li>Does not use third-party analytics services (such as Firebase or Google Analytics)</li>
+            </ul>
+
+            <h2>3. Data Storage</h2>
+            <p>All data is stored <strong>locally on your device</strong> and is never transmitted to external servers. Locally stored data includes:</p>
+            <ul>
+                <li>Game progress (current level, stage, and score)</li>
+                <li>Game statistics (win/loss ratios, streaks, averages)</li>
+                <li>Achievements and badges</li>
+                <li>User preferences (language, audio, notification settings)</li>
+                <li>Game history records</li>
+            </ul>
+            <p><strong>No data is synced to cloud services</strong> or external servers. Uninstalling the app will permanently delete all locally stored data.</p>
+
+            <h2>4. Internet Usage</h2>
+            <p>Kelime Oyunu requires an internet connection for the following purposes:</p>
+            <ul>
+                <li><strong>Word Validation:</strong> The app connects to online dictionary services (TDK - Turkish Language Association for Turkish words, and Free Dictionary API for English words) to validate guessed words. Only the guessed word is sent; no personal data is transmitted.</li>
+                <li><strong>Advertisements:</strong> The app displays ads through Google AdMob (see Section 5 for details).</li>
+            </ul>
+            <p>Core gameplay (word lists and game logic) works offline using embedded dictionaries.</p>
+
+            <h2>5. Advertising</h2>
+            <p>Kelime Oyunu uses <strong>Google AdMob</strong> to display advertisements. The following ad types are used:</p>
+            <ul>
+                <li><strong>Banner Ads:</strong> Displayed during gameplay</li>
+                <li><strong>Interstitial Ads:</strong> Shown between game stages (with cooldown limits)</li>
+                <li><strong>Rewarded Ads:</strong> Optional ads that users can choose to watch for extra game attempts or to skip difficult words</li>
+            </ul>
+            <p>Google AdMob may collect certain data as described in <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. This may include:</p>
+            <ul>
+                <li>IP address</li>
+                <li>Device information (model, operating system)</li>
+                <li>Ad interaction data</li>
+            </ul>
+            <p><strong>Note:</strong> No ads are shown during the first 5 levels to ensure a smooth new user experience.</p>
+
+            <h2>6. Permissions</h2>
+            <p>The app requests the following permissions:</p>
+            <ul>
+                <li><strong>Internet:</strong> Required for word validation and ad serving</li>
+                <li><strong>Notifications:</strong> For optional local reminders (you can disable these in your device settings)</li>
+                <li><strong>Vibration:</strong> For haptic feedback during gameplay</li>
+            </ul>
+            <p>The app does <strong>not</strong> request access to your camera, microphone, contacts, location, or storage.</p>
+
+            <h2>7. Children's Privacy</h2>
+            <p>Kelime Oyunu is an educational word game suitable for users of all ages. Regarding children under 13:</p>
+            <ul>
+                <li>We do not knowingly collect personal information from children</li>
+                <li>No account creation or sign-in is required</li>
+                <li>There are no social features, chat, or communication capabilities</li>
+                <li>There are no in-app purchases</li>
+                <li>Content is educational and appropriate for all ages</li>
+                <li>We comply with the Children's Online Privacy Protection Act (COPPA)</li>
+            </ul>
+
+            <h2>8. Data Security</h2>
+            <p>All game data is stored locally on your device using platform-standard storage mechanisms. Since we do not collect or transmit personal data to our servers, there is no risk of server-side data breaches.</p>
+
+            <h2>9. Your Rights</h2>
+            <p>You have full control over your data:</p>
+            <ul>
+                <li>All data is stored on your device and can be deleted by uninstalling the app</li>
+                <li>You can reset your game progress within the app settings</li>
+                <li>You can manage ad preferences through your device's advertising settings</li>
+                <li>You can disable notifications in your device settings</li>
+            </ul>
+
+            <h2>10. Third-Party Services</h2>
+            <ul>
+                <li><strong>Google AdMob:</strong> For advertisements - <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+                <li><strong>Google Play Store:</strong> For app distribution - <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+                <li><strong>TDK (sozluk.gov.tr):</strong> Turkish dictionary API for word validation</li>
+                <li><strong>Free Dictionary API:</strong> English dictionary API for word validation</li>
+            </ul>
+
+            <h2>11. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date. We encourage you to review this policy periodically.</p>
+
+            <h2>12. Compliance</h2>
+            <p>This privacy policy complies with:</p>
+            <ul>
+                <li>Google Play Developer Program Policies</li>
+                <li>Children's Online Privacy Protection Act (COPPA)</li>
+                <li>General Data Protection Regulation (GDPR)</li>
+                <li>California Consumer Privacy Act (CCPA)</li>
+                <li>Turkish Personal Data Protection Law (KVKK)</li>
+            </ul>
+
+            <h2>13. Contact</h2>
+            <p><strong>Developer:</strong> Arif Edemir</p>
+            <p><strong>Email:</strong> <a href="mailto:demirahmet2017@gmail.com">demirahmet2017@gmail.com</a></p>
+            <p>We aim to respond to all privacy-related inquiries within 48 hours.</p>
+        </div>
+
+        <!-- Turkish Content -->
+        <div id="tr-content" class="content">
+            <h1>Gizlilik Politikasi - Kelime Oyunu</h1>
+            <p style="color: #7f8c8d; font-style: italic;"><strong>Son Guncelleme: 28 Ocak 2026</strong></p>
+
+            <div class="highlight">
+                <strong>Kisa Ozet:</strong> Kelime Oyunu <strong>hicbir kisisel veri toplamaz</strong>. Uygulama, reklamlar icin Google AdMob kullanir ve kelime dogrulama icin cevrimici sozluklere baglanir. Tum oyun ilerlemesi ve istatistikler cihazinizda yerel olarak saklanir.
+            </div>
+
+            <h2>1. Giris</h2>
+            <p>Bu Gizlilik Politikasi, Kelime Oyunu ("Uygulama", "biz", "bizim") uygulamasinin kullanici bilgilerini nasil ele aldigini aciklamaktadir. Kelime Oyunu, Wordle'dan ilham alan, Turkce ve Ingilizce destekleyen cok dilli bir kelime tahmin oyunudur. Tum kullanicilarin gizliligini korumaya kararliyiz.</p>
+
+            <h2>2. Topladigimiz Bilgiler</h2>
+            <p><strong>HICBIR kisisel bilgi toplamiyoruz.</strong> Uygulama:</p>
+            <ul>
+                <li>Kullanici kaydi veya giris gerektirmez</li>
+                <li>Isim, e-posta veya iletisim bilgisi toplamaz</li>
+                <li>Rehber, konum, kamera veya fotograflara erismez</li>
+                <li>Cihaz tanimlayicilari veya benzersiz kimlikler toplamaz</li>
+                <li>Ucuncu taraf analitik servisleri (Firebase veya Google Analytics gibi) kullanmaz</li>
+            </ul>
+
+            <h2>3. Veri Depolama</h2>
+            <p>Tum veriler <strong>cihazinizda yerel olarak</strong> saklanir ve hicbir zaman harici sunuculara iletilmez. Yerel olarak saklanan veriler:</p>
+            <ul>
+                <li>Oyun ilerlemesi (mevcut seviye, asama ve puan)</li>
+                <li>Oyun istatistikleri (kazanma/kaybetme oranlari, seriler, ortalamalar)</li>
+                <li>Basarilar ve rozetler</li>
+                <li>Kullanici tercihleri (dil, ses, bildirim ayarlari)</li>
+                <li>Oyun gecmisi kayitlari</li>
+            </ul>
+            <p><strong>Hicbir veri bulut servislerine</strong> veya harici sunuculara senkronize edilmez. Uygulamayi kaldirmak, yerel olarak saklanan tum verileri kalici olarak siler.</p>
+
+            <h2>4. Internet Kullanimi</h2>
+            <p>Kelime Oyunu asagidaki amaclar icin internet baglantisi gerektirir:</p>
+            <ul>
+                <li><strong>Kelime Dogrulama:</strong> Uygulama, tahmin edilen kelimeleri dogrulamak icin cevrimici sozluk servislerine (Turkce kelimeler icin TDK - Turk Dil Kurumu, Ingilizce kelimeler icin Free Dictionary API) baglanir. Yalnizca tahmin edilen kelime gonderilir; hicbir kisisel veri iletilmez.</li>
+                <li><strong>Reklamlar:</strong> Uygulama, Google AdMob araciligiyla reklam goruntular (ayrintilar icin Bolum 5'e bakiniz).</li>
+            </ul>
+            <p>Temel oyun mekanigi (kelime listeleri ve oyun mantigi) gomulu sozlukler kullanilarak cevrimdisi calisir.</p>
+
+            <h2>5. Reklamlar</h2>
+            <p>Kelime Oyunu, reklam goruntlemek icin <strong>Google AdMob</strong> kullanir. Asagidaki reklam turleri kullanilir:</p>
+            <ul>
+                <li><strong>Banner Reklamlar:</strong> Oyun sirasinda goruntulenir</li>
+                <li><strong>Gecis Reklamlari (Interstitial):</strong> Oyun asamalari arasinda gosterilir (bekleme suresi sinirlariyla)</li>
+                <li><strong>Odullu Reklamlar:</strong> Kullanicilarin ekstra oyun hakki veya zor kelimeleri gecmek icin izlemeyi secebilecegi istege bagli reklamlar</li>
+            </ul>
+            <p>Google AdMob, <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikasi</a>'nda aciklandigi sekilde belirli veriler toplayabilir. Bunlar sunlari icerebilir:</p>
+            <ul>
+                <li>IP adresi</li>
+                <li>Cihaz bilgileri (model, isletim sistemi)</li>
+                <li>Reklam etkilesim verileri</li>
+            </ul>
+            <p><strong>Not:</strong> Sorunsuz bir yeni kullanici deneyimi saglamak icin ilk 5 seviyede hicbir reklam gosterilmez.</p>
+
+            <h2>6. Izinler</h2>
+            <p>Uygulama asagidaki izinleri ister:</p>
+            <ul>
+                <li><strong>Internet:</strong> Kelime dogrulama ve reklam sunumu icin gereklidir</li>
+                <li><strong>Bildirimler:</strong> Istege bagli yerel hatirlatmalar icin (cihaz ayarlarinizdan devre disi birakabilirsiniz)</li>
+                <li><strong>Titresim:</strong> Oyun sirasinda dokunsal geri bildirim icin</li>
+            </ul>
+            <p>Uygulama kameraniza, mikrofonunuza, rehberinize, konumunuza veya depolama alaniniza erisim <strong>istemez</strong>.</p>
+
+            <h2>7. Cocuklarin Gizliligi</h2>
+            <p>Kelime Oyunu, her yastan kullanici icin uygun egitici bir kelime oyunudur. 13 yas altindaki cocuklarla ilgili olarak:</p>
+            <ul>
+                <li>Cocuklardan bilerek kisisel bilgi toplamiyoruz</li>
+                <li>Hesap olusturma veya giris yapma gerekmez</li>
+                <li>Sosyal ozellikler, sohbet veya iletisim yetenekleri yoktur</li>
+                <li>Uygulama ici satin alma yoktur</li>
+                <li>Icerik egiticidir ve her yas icin uygundur</li>
+                <li>Cocuklarin Cevrimici Gizlilik Koruma Yasasi'na (COPPA) uyariz</li>
+            </ul>
+
+            <h2>8. Veri Guvenligi</h2>
+            <p>Tum oyun verileri, platform standart depolama mekanizmalari kullanilarak cihazinizda yerel olarak saklanir. Kisisel verileri sunucularimiza toplamedigimiz veya iletmedigimiz icin sunucu tarafli veri ihlali riski yoktur.</p>
+
+            <h2>9. Haklariniz</h2>
+            <p>Verileriniz uzerinde tam kontrole sahipsiniz:</p>
+            <ul>
+                <li>Tum veriler cihazinizda saklanir ve uygulamayi kaldirarak silinebilir</li>
+                <li>Oyun ilerlemenizi uygulama ayarlarindan sifirlayabilirsiniz</li>
+                <li>Reklam tercihlerini cihazinizin reklam ayarlarindan yonetebilirsiniz</li>
+                <li>Bildirimleri cihaz ayarlarinizdan devre disi birakabilirsiniz</li>
+            </ul>
+
+            <h2>10. Ucuncu Taraf Hizmetler</h2>
+            <ul>
+                <li><strong>Google AdMob:</strong> Reklamlar icin - <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikasi</a></li>
+                <li><strong>Google Play Store:</strong> Uygulama dagitimi icin - <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikasi</a></li>
+                <li><strong>TDK (sozluk.gov.tr):</strong> Kelime dogrulama icin Turkce sozluk API'si</li>
+                <li><strong>Free Dictionary API:</strong> Kelime dogrulama icin Ingilizce sozluk API'si</li>
+            </ul>
+
+            <h2>11. Bu Politikadaki Degisiklikler</h2>
+            <p>Bu Gizlilik Politikasini zaman zaman guncelleyebiliriz. Degisiklikler, guncellenmis revizyon tarihi ile bu sayfada yayinlanacaktir. Bu politikayi periyodik olarak gozden gecirmenizi oneririz.</p>
+
+            <h2>12. Uyumluluk</h2>
+            <p>Bu gizlilik politikasi sunlara uygundur:</p>
+            <ul>
+                <li>Google Play Gelistirici Program Politikalari</li>
+                <li>Cocuklarin Cevrimici Gizlilik Koruma Yasasi (COPPA)</li>
+                <li>Genel Veri Koruma Yonetmeligi (GDPR)</li>
+                <li>Kaliforniya Tuketici Gizlilik Yasasi (CCPA)</li>
+                <li>Kisisel Verilerin Korunmasi Kanunu (KVKK)</li>
+            </ul>
+
+            <h2>13. Iletisim</h2>
+            <p><strong>Gelistirici:</strong> Arif Edemir</p>
+            <p><strong>E-posta:</strong> <a href="mailto:demirahmet2017@gmail.com">demirahmet2017@gmail.com</a></p>
+            <p>Gizlilikle ilgili tum sorulara 48 saat icinde yanit vermeyi hedefliyoruz.</p>
+        </div>
+    </div>
+
+    <script>
+        function showLanguage(lang) {
+            document.querySelectorAll('.content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.querySelectorAll('.language-selector button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(lang + '-content').classList.add('active');
+            document.getElementById(lang + '-btn').classList.add('active');
+        }
+    </script>
+</body>
+</html>
