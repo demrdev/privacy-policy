@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hisn — Support</title>
+  <meta name="description" content="Support and help for Hisn — Daily Adhkar Shield. Contact us, browse FAQs about subscriptions, restoring purchases, permissions, and app blocking." />
+  <style>
+    :root {
+      --bg: #1A1A2E;
+      --bg2: #0F0F1A;
+      --card: #252547;
+      --border: #33334A;
+      --gold: #D4A843;
+      --text: #FFFFFF;
+      --muted: rgba(255,255,255,0.72);
+      --muted2: rgba(255,255,255,0.55);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, var(--bg2), var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 64px; }
+    header { text-align: center; margin-bottom: 36px; }
+    .logo {
+      width: 72px; height: 72px; border-radius: 18px;
+      background: var(--card); border: 1px solid var(--border);
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 34px; margin-bottom: 14px;
+    }
+    h1 { font-size: 28px; margin: 6px 0 4px; }
+    .sub { color: var(--muted); font-size: 15px; margin: 0; }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 22px 24px; margin: 18px 0;
+    }
+    h2 { font-size: 19px; margin: 0 0 14px; color: var(--gold); }
+    .contact-btn {
+      display: inline-block; background: var(--gold); color: #1A1A2E;
+      font-weight: 700; text-decoration: none; padding: 13px 26px;
+      border-radius: 12px; margin-top: 8px;
+    }
+    .meta { color: var(--muted2); font-size: 14px; margin-top: 10px; }
+    details {
+      border-bottom: 1px solid var(--border); padding: 14px 0;
+    }
+    details:last-child { border-bottom: none; }
+    summary {
+      cursor: pointer; font-weight: 600; font-size: 16px;
+      list-style: none; outline: none; display: flex; justify-content: space-between; align-items: center;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--gold); font-size: 22px; font-weight: 400; }
+    details[open] summary::after { content: "–"; }
+    details p { color: var(--muted); margin: 12px 0 2px; font-size: 15px; }
+    a { color: var(--gold); }
+    .links { display: flex; gap: 18px; flex-wrap: wrap; }
+    footer { text-align: center; color: var(--muted2); font-size: 13px; margin-top: 30px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">☪︎</div>
+      <h1>Hisn — Support</h1>
+      <p class="sub">Daily Adhkar Shield · We're here to help</p>
+    </header>
+
+    <div class="card">
+      <h2>Contact Us</h2>
+      <p>Have a question, found a bug, or need help with your subscription? Email us and we'll get back to you.</p>
+      <a class="contact-btn" href="mailto:dmr@dmrio.com?subject=Hisn%20Support">Email dmr@dmrio.com</a>
+      <p class="meta">We typically respond within 48 hours.</p>
+    </div>
+
+    <div class="card">
+      <h2>Frequently Asked Questions</h2>
+
+      <details>
+        <summary>What is Hisn?</summary>
+        <p>Hisn — Daily Adhkar Shield helps you keep up with your morning and evening adhkar (remembrances of Allah). You can optionally block distracting apps on your own device until you complete your adhkar, view prayer times, and find the Qibla direction.</p>
+      </details>
+
+      <details>
+        <summary>How do subscriptions and billing work?</summary>
+        <p>Hisn offers an optional Premium subscription (weekly or monthly) that unlocks additional features. Payment is charged to your Apple ID at confirmation of purchase. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. You can manage or cancel anytime in <strong>Settings → Apple ID → Subscriptions</strong> on your device.</p>
+      </details>
+
+      <details>
+        <summary>How do I restore a previous purchase?</summary>
+        <p>Open Hisn, go to <strong>Settings → Restore Purchases</strong>. Make sure you're signed in with the same Apple ID you used for the original purchase. If your Premium status doesn't restore, email us at dmr@dmrio.com.</p>
+      </details>
+
+      <details>
+        <summary>Why does Hisn ask for location permission?</summary>
+        <p>Location is used only to calculate accurate prayer times and the Qibla direction for your area. It is processed on your device and is not sent to our servers. You can grant or decline this in the system prompt, and change it anytime in <strong>iOS Settings → Hisn → Location</strong>.</p>
+      </details>
+
+      <details>
+        <summary>How does app blocking work?</summary>
+        <p>App blocking is an optional, self-control feature. Using Apple's Screen Time (Family Controls) framework, <em>you</em> choose which of your own apps to pause until you finish your adhkar. Hisn cannot see which apps you pick — the selection stays private on your device. You can turn blocking off at any time in <strong>Settings → App Blocking</strong>.</p>
+      </details>
+
+      <details>
+        <summary>Why am I not receiving adhkar reminders?</summary>
+        <p>Make sure notifications are enabled in <strong>iOS Settings → Hisn → Notifications</strong>, and that your morning/evening schedule is turned on in the app's Settings. If reminders still don't appear, contact us.</p>
+      </details>
+
+      <details>
+        <summary>How is my data handled?</summary>
+        <p>Hisn is built to respect your privacy. Your adhkar progress, app-blocking selection, and location are handled on your device. See our <a href="https://demrdev.github.io/privacy-policy/hisn.html">Privacy Policy</a> for full details.</p>
+      </details>
+
+      <details>
+        <summary>How do I delete the app or my data?</summary>
+        <p>Deleting Hisn from your device removes its on-device data. To cancel an active subscription first, use <strong>Settings → Apple ID → Subscriptions</strong>. For any further request, email dmr@dmrio.com.</p>
+      </details>
+    </div>
+
+    <div class="card">
+      <h2>Legal</h2>
+      <div class="links">
+        <a href="https://demrdev.github.io/privacy-policy/hisn.html">Privacy Policy</a>
+        <a href="https://demrdev.github.io/privacy-policy/hisn-terms.html">Terms of Use</a>
+      </div>
+    </div>
+
+    <footer>
+      © 2026 Hisn — Daily Adhkar Shield · Support: dmr@dmrio.com
+    </footer>
+  </div>
+</body>
+</html>
