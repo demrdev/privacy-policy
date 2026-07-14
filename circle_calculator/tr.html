@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası - Daire Hesaplayıcı</title>
+    <meta name="description" content="Daire Hesaplayıcı mobil uygulaması gizlilik politikası">
+    <meta name="robots" content="index, follow">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .language-selector {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .language-selector a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 15px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .language-selector a:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .language-selector a.active {
+            background: #667eea;
+            color: white;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        ul {
+            margin: 15px 0 15px 30px;
+            color: #555;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            background: #f8f9ff;
+            padding: 20px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #f0f0f0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-selector">
+            <a href="index.html">English</a> | <a href="tr.html" class="active">Türkçe</a>
+        </div>
+
+        <h1>Gizlilik Politikası</h1>
+        <p class="last-updated"><strong>Son güncelleme:</strong> 14 Temmuz 2026</p>
+
+        <h2>1. Giriş</h2>
+        <p>Daire Hesaplayıcı ("biz", "bizim" veya "uygulama") gizliliğinizi korumaya kararlıdır. Bu politika, hangi bilgilerin cihazınızda kaldığını ve reklam ile satın alma hizmeti sağlayıcılarının sınırlı verileri nasıl işleyebileceğini açıklar.</p>
+
+        <div class="highlight">
+            <strong>Kısaca:</strong> Hesap değerleriniz, geçmişiniz, tercihleriniz ve proje içeriğiniz cihazınızda saklanır. Uygulama reklam için Google Mobile Ads, satın almalar için RevenueCat kullanır; bu sağlayıcılar aşağıda açıklanan cihaz, reklam, satın alma, kullanım ve tanılama verilerini işleyebilir.
+        </div>
+
+        <h2>2. Bilerek Göndermediğimiz Bilgiler</h2>
+        <p>Aşağıdaki uygulama içeriklerini reklam veya satın alma sağlayıcılarına bilerek göndermeyiz:</p>
+        <ul>
+            <li>Hesaplayıcılara girilen değerler ve hesaplanan sonuçlar</li>
+            <li>Hesap geçmişi, favoriler veya yerel tercihler</li>
+            <li>Raporlarda kullanılan şirket adları, notlar veya dosya içerikleri</li>
+            <li>Kesin konum, kişiler, fotoğraflar veya mikrofon kayıtları</li>
+        </ul>
+
+        <h2>3. Yerel Veri Depolama</h2>
+        <p>Uygulama verileri yalnızca cihazınızda yerel olarak saklar:</p>
+        <ul>
+            <li><strong>Hesaplama Geçmişi:</strong> Kaydettiğiniz hesaplamalar cihaz depolama alanı (SharedPreferences) kullanılarak yerel olarak saklanır. Bu veriler asla cihazınızdan ayrılmaz.</li>
+            <li><strong>Uygulama Tercihleri:</strong> Ayarlarınız (tema, dil, ondalık basamaklar, açı birimi) kolaylığınız için yerel olarak saklanır.</li>
+            <li><strong>İlk Kullanım Durumu:</strong> Öğreticiyi tamamlayıp tamamlamadığınızı gösteren basit bir işaret.</li>
+        </ul>
+        <p>Bu yerel uygulama içeriği sunucularımıza yüklenmez. Bir dosyayı paylaşmayı veya dışa aktarmayı seçerseniz, seçtiğiniz hedef ve işletim sisteminin paylaşım hizmetleri bu içeriği kendi politikalarına göre işleyebilir.</p>
+
+        <h2>4. Reklam ve Onay</h2>
+        <p>Ücretsiz sürüm Google Mobile Ads tarafından sağlanan reklamları gösterebilir. Bölgenize, onay tercihlerinize, cihaz ayarlarınıza ve platform kurallarına bağlı olarak Google şunları işleyebilir:</p>
+        <ul>
+            <li>Cihaz veya reklam tanımlayıcıları</li>
+            <li>Reklam etkileşimleri ve tanılama verileri</li>
+            <li>Hizmet tarafından türetilen yaklaşık konum</li>
+            <li>Kişiselleştirilmiş veya kişiselleştirilmemiş reklam seçiminde kullanılan onay sinyalleri</li>
+        </ul>
+        <p>iOS'ta uygulama, verileri izleme amacıyla kullanmadan önce App Tracking Transparency izni isteyebilir. Gereken bölgelerde Google User Messaging Platform onay kontrollerini gösterir. Kullanılabilir tercihleri uygulamanın gizlilik ayarlarından ve cihaz ayarlarından inceleyebilirsiniz.</p>
+
+        <h2>5. Satın Almalar ve Abonelikler</h2>
+        <p>RevenueCat; satın almaları doğrulamaya, erişimi geri yüklemeye ve Pro haklarını yönetmeye yardımcı olur. RevenueCat ve ilgili uygulama mağazası satın alma geçmişi, uygulama kullanıcı tanımlayıcısı, cihaz/platform bilgisi ve tanılama verileri gibi bilgileri işleyebilir. Tam ödeme kartı bilgilerinizi almayız.</p>
+
+        <h2>6. Diğer Hizmetler</h2>
+        <p>Mevcut uygulama şu hizmet kategorilerini kullanır:</p>
+        <ul>
+            <li><strong>Google Mobile Ads ve UMP:</strong> reklam ve onay yönetimi</li>
+            <li><strong>RevenueCat:</strong> satın alma doğrulaması ve abonelik hakları</li>
+            <li><strong>Apple App Store / Google Play:</strong> ödeme işleme ve abonelik yönetimi</li>
+            <li><strong>Yerel bildirimler:</strong> cihazınızda planlanan hatırlatmalar</li>
+        </ul>
+        <p>Mevcut sürüm hesap kimlik doğrulaması, bulut senkronizasyonu, Firebase Analytics veya Firebase Crashlytics kullanmaz.</p>
+
+        <h2>7. İnternet ve Çevrimdışı Kullanım</h2>
+        <p>Temel hesaplamalar ve yerleşik boru cetvelleri internet bağlantısı olmadan çalışabilir. Bağlantı şu amaçlarla kullanılabilir:</p>
+        <ul>
+            <li>Reklam ve onay formlarını yüklemek</li>
+            <li>Pro erişimini doğrulamak, satın almak veya geri yüklemek</li>
+            <li>Destek, gizlilik ve diğer harici bağlantıları açmak</li>
+            <li>Seçtiğiniz hedef üzerinden içerik paylaşmak</li>
+        </ul>
+
+        <h2>8. Tercihleriniz ve Silme</h2>
+        <ul>
+            <li>Hesaplama geçmişini uygulamadan temizleyebilirsiniz.</li>
+            <li>Kullanılabilir reklam onaylarını uygulamanın gizlilik ayarlarından değiştirebilirsiniz.</li>
+            <li>Cihaz ayarlarından izlemeyi sınırlayabilir veya reklam tercihlerini sıfırlayabilirsiniz.</li>
+            <li>Abonelikleri App Store veya Google Play hesabınızdan yönetebilir veya iptal edebilirsiniz.</li>
+            <li>Platform yedekleme davranışına tabi olmak üzere uygulamayı kaldırarak yerel verileri silebilirsiniz.</li>
+        </ul>
+        <p>Doğrudan yönergeler için <a href="privacy-choices.html">Gizlilik Tercihleri</a> sayfasına bakın.</p>
+
+        <h2>9. Çocukların Gizliliği</h2>
+        <p>Uygulama bir çocuğun adını, iletişim bilgisini veya hesabını istemek üzere tasarlanmamıştır. Reklamların kullanılabilirliği ve işlenişi yaşa, bölgeye, mağaza ayarlarına ve onaya göre değişebilir. Bir ebeveyn veya vasi, çocuğun uygulamayı kullanmasına izin vermeden önce uygulama ve cihaz gizlilik kontrollerini incelemelidir.</p>
+
+        <h2>10. Güvenlik</h2>
+        <p>İşletim sistemi ve hizmet SDK'larının sağladığı platform güvenlik kontrollerini ve şifreli ağ bağlantılarını kullanırız. Hiçbir sistemin tamamen güvenli olduğu garanti edilemez. Cihazınızı ve uygulamayı güncel tutun; paylaşmayı planladığınız içeriklere gizli bilgi eklemeyin.</p>
+
+        <h2>11. Hizmet Sağlayıcı Politikaları</h2>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a></li>
+            <li><a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat Gizlilik Politikası</a></li>
+            <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Gizlilik Politikası</a></li>
+        </ul>
+
+        <h2>12. Bu Gizlilik Politikasındaki Değişiklikler</h2>
+        <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Herhangi bir değişiklik, bu sayfanın başındaki yeni bir "Son güncelleme" tarihiyle yansıtılacaktır. Bu Gizlilik Politikasını değişiklikler için periyodik olarak gözden geçirmenizi öneririz.</p>
+
+        <h2>13. Bize Ulaşın</h2>
+        <p>Gizlilik soruları için <a href="support.html">Daire Hesaplayıcı destek sayfasını</a> kullanın.</p>
+
+        <div class="footer">
+            <p>© 2026 Daire Hesaplayıcı. Tüm hakları saklıdır.</p>
+        </div>
+    </div>
+</body>
+</html>
