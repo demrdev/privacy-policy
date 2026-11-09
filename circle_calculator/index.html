@@ -138,23 +138,25 @@
         </div>
 
         <h1>Privacy Policy</h1>
-        <p class="last-updated"><strong>Last updated:</strong> July 14, 2026</p>
+        <!-- DRAFT for Circle Calculator 2.0.0 (ad-free). Publish to GitHub Pages only on the day 2.0.0 is live in both stores; see docs/v2/AD_REMOVAL.md. -->
+        <p class="last-updated"><strong>Last updated:</strong> November 10, 2026</p>
 
         <h2>1. Introduction</h2>
-        <p>Circle Calculator ("we", "our", or "the app") is committed to protecting your privacy. This policy explains which information stays on your device and how advertising and purchase service providers may process limited data.</p>
+        <p>Circle Calculator ("we", "our", or "the app") is committed to protecting your privacy. This policy explains which information stays on your device and how our purchase service provider may process limited data.</p>
 
         <div class="highlight">
-            <strong>In short:</strong> Your calculation values, history, preferences, and project content are stored on your device. The app uses Google Mobile Ads for advertising and RevenueCat for purchases; those providers may process device, advertising, purchase, usage, and diagnostic data as described below.
+            <strong>In short:</strong> Circle Calculator 2.0 and later shows no ads and contains no advertising or tracking SDK. Your calculation values, history, preferences, and project content are stored on your device. RevenueCat and the app stores process purchase data so Pro can be bought and restored.
         </div>
 
         <h2>2. Information We Do Not Intentionally Send</h2>
-        <p>We do not intentionally send the following app content to advertising or purchase providers:</p>
+        <p>We do not intentionally send the following app content to any service provider:</p>
         <ul>
             <li>Values entered into calculators and calculated results</li>
             <li>Calculation history, favorites, or locally saved preferences</li>
             <li>Company names, notes, or file contents used in generated reports</li>
             <li>Precise location, contacts, photos, or microphone recordings</li>
         </ul>
+        <p>The one exception is <strong>Fill with AI</strong>, described in section 6a: only when you use it, and only after you agree, the text you type there is sent to find the right tool.</p>
 
         <h2>3. Local Data Storage</h2>
         <p>The app stores data locally on your device only:</p>
@@ -162,53 +164,61 @@
             <li><strong>Calculation History:</strong> Your saved calculations are stored locally using device storage (SharedPreferences). This data never leaves your device.</li>
             <li><strong>App Preferences:</strong> Your settings (theme, language, decimal places, angle unit) are saved locally for your convenience.</li>
             <li><strong>Onboarding Status:</strong> A simple flag indicating whether you've completed the tutorial.</li>
+            <li><strong>Free-plan daily counter:</strong> the number of calculations used today, kept in the device's secure storage (iOS Keychain, Android Block Store with cloud backup off) so that it continues after a reinstall. It never leaves the device.</li>
         </ul>
         <p>This local app content is not uploaded to our servers. If you choose to share or export a file, the destination you select and the operating system's sharing services may process that content under their own policies.</p>
 
-        <h2>4. Advertising and Consent</h2>
-        <p>The free version may display advertising supplied by Google Mobile Ads. Depending on your region, consent choices, device settings, and platform rules, Google may process:</p>
-        <ul>
-            <li>Device or advertising identifiers</li>
-            <li>Advertising interactions and diagnostics</li>
-            <li>Approximate location inferred by the service</li>
-            <li>Consent signals used to select personalized or non-personalized ads</li>
-        </ul>
-        <p>On iOS, the app may request App Tracking Transparency permission before using data for tracking. Where required, Google's User Messaging Platform presents consent controls. You can review available choices from the app's privacy settings and from your device settings.</p>
+        <h2>4. No Advertising or Tracking</h2>
+        <p>From version 2.0, Circle Calculator shows no ads to anyone, on the free plan or Pro. The app does not include Google Mobile Ads or any other advertising SDK, does not show advertising consent forms, does not request App Tracking Transparency permission, and does not read your device's advertising identifier. We do not track you across other companies' apps or websites.</p>
+        <p><strong>Older versions:</strong> versions before 2.0 could show ads supplied by Google Mobile Ads, which could process device or advertising identifiers, advertising interactions, approximate location, and consent signals, with Google's User Messaging Platform and, on iOS, App Tracking Transparency controlling consent. If you still use an older version, that processing can continue until you update. Updating to 2.0 or later stops it. Records Google already holds are covered by the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
 
         <h2>5. Purchases and Subscriptions</h2>
-        <p>RevenueCat helps validate purchases, restore access, and manage Pro entitlements. RevenueCat and the relevant app store may process information such as purchase history, an app user identifier, device/platform information, and diagnostics. We do not receive your full payment-card details.</p>
+        <p>RevenueCat helps validate purchases, restore access, and manage Pro entitlements. RevenueCat and the relevant app store may process information such as purchase history, an anonymous app user identifier, device/platform information, and diagnostics. We do not receive your full payment-card details.</p>
 
         <h2>6. Other Services</h2>
         <p>The current app uses the following service categories:</p>
         <ul>
-            <li><strong>Google Mobile Ads and UMP:</strong> advertising and consent management</li>
             <li><strong>RevenueCat:</strong> purchase validation and subscription entitlements</li>
             <li><strong>Apple App Store / Google Play:</strong> payment processing and subscription management</li>
             <li><strong>Local notifications:</strong> reminders scheduled on your device</li>
+            <li><strong>Store review prompts:</strong> review interactions managed by Apple App Store or Google Play after eligibility checks</li>
+            <li><strong>Operating-system sharing and printing:</strong> only content you explicitly choose to export or share</li>
+            <li><strong>Firebase Analytics and Firebase Crashlytics (Google), only with your consent:</strong> which screens and tools are used, app version, device model, operating system, crash reports, app instance and installation identifiers, an approximate location (country or region, derived by Google from the masked IP address; the IP address itself is not stored in our reports), purchase events that Analytics records automatically (product and price, never payment details), and, for remote switches, the country, language and time zone, so we can fix crashes and see which features help people. Calculator values, results, history, notes and file contents are never sent. The advertising identifier is not collected, the data is not used for advertising or tracking, and you can turn it off at any time in the app's privacy settings.</li>
         </ul>
-        <p>The current version does not use account authentication, cloud sync, Firebase Analytics, or Firebase Crashlytics.</p>
+        <p>The current version does not use account authentication or cloud sync. If we add either, we will update this policy before the version that uses it is released, and features that send content off your device will ask for your consent first.</p>
+
+        <h2>6a. Fill with AI (optional)</h2>
+        <p>"Fill with AI" lets you describe a job in your own words; AI picks a tool and places your own numbers into it. AI does not calculate: the app's calculation engine on your device gives the result, and you can change every value.</p>
+        <ul>
+            <li><strong>When:</strong> only when you use the feature, and only after you agree on the first use. You can turn it off at any time in Settings. All tools work without it.</li>
+            <li><strong>What is sent:</strong> the text you type in the AI box, the app language and unit system, the list of the app's tools, and the anonymous RevenueCat app user identifier (to check Pro access and the usage limit). Nothing else from the app, and no calculation history, is sent.</li>
+            <li><strong>Who processes it:</strong> our AI service on Cloudflare Workers forwards the text to our AI model provider, Anthropic; only if Anthropic is unavailable, the same request goes to OpenAI instead. We do not store the text. Neither provider uses it to train models; each may keep it for a limited time for safety and abuse checks under its API terms.</li>
+            <li><strong>Usage counts:</strong> to apply the free trial and the fair-use limit, our AI service stores how many questions an anonymous identifier asked per day and month (a one-way hash of the RevenueCat identifier, not the text).</li>
+            <li><strong>Not used for:</strong> advertising, tracking, or building a profile of you. Analytics never receives the text or your numbers; it only records the kind of outcome (for example "tool opened" or "question asked").</li>
+        </ul>
 
         <h2>7. Internet and Offline Use</h2>
         <p>Core calculations and bundled pipe charts can work without an internet connection. A connection may be used for:</p>
         <ul>
-            <li>Loading advertisements and consent forms</li>
             <li>Validating, purchasing, or restoring Pro access</li>
             <li>Opening support, privacy, and other external links</li>
             <li>Sharing content through a destination chosen by you</li>
+            <li>Requesting an Apple App Store or Google Play review prompt</li>
+            <li>Fill with AI, if you use it (AI needs an internet connection)</li>
         </ul>
 
         <h2>8. Your Choices and Deletion</h2>
         <ul>
             <li>Clear calculation history from the app.</li>
-            <li>Change available advertising consent choices from the app's privacy settings.</li>
-            <li>Limit tracking or reset advertising choices in your device settings.</li>
+            <li>Turn Fill with AI off in Settings; nothing is sent to the AI service while it is off.</li>
             <li>Manage or cancel subscriptions in your App Store or Google Play account.</li>
             <li>Uninstall the app to remove its local data from the device, subject to platform backup behavior.</li>
+            <li>Send requests about purchase records through the RevenueCat, Apple, or Google privacy request channels.</li>
         </ul>
         <p>See the <a href="privacy-choices.html">Privacy Choices</a> page for direct instructions.</p>
 
         <h2>9. Children's Privacy</h2>
-        <p>The app is not designed to request a child's name, contact details, or account. Advertising availability and treatment can vary by age, region, store settings, and consent. A parent or guardian should review the app and device privacy controls before allowing a child to use it.</p>
+        <p>The app is not designed to request a child's name, contact details, or account, and version 2.0 and later shows no ads. A parent or guardian should review the app and device privacy controls before allowing a child to use it.</p>
 
         <h2>10. Security</h2>
         <p>We use platform security controls and encrypted network connections provided by the operating system and service SDKs. No system can be guaranteed completely secure. Keep your device and app updated and avoid placing confidential information in content you plan to share.</p>
@@ -218,6 +228,9 @@
             <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
             <li><a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat Privacy Policy</a></li>
             <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a></li>
+            <li><a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic Privacy Policy</a></li>
+            <li><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a></li>
+            <li><a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener">OpenAI Privacy Policy</a></li>
         </ul>
 
         <h2>12. Changes to This Privacy Policy</h2>
